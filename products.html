@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Zilla+Slab:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5996a0a5b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>All Products - ZeaStore</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html"><h1>ZeaStore</h1></a>
+        <nav>
+          <ul id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img id="cart" src="images/cart.png" /></a>
+        <img
+          id="cart"
+          src="images/menu.png"
+          class="menu-icon"
+          onclick="menuToggle()"
+        />
+      </div>
+
+      <!-- Navbar -->
+    </div>
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option>Default sorting</option>
+          <option>Sort by price</option>
+          <option>Sort by popularity</option>
+          <option>Sort by rating</option>
+          <option>Sort by sale</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="productDetails.html"><img src="images/product-1.jpg" /></a>
+          <a href="productDetails.html"><h4>Red Printed T-Shirt</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$49.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-2.jpg" />
+          <h4>Hrx Black Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$59.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-3.jpg" />
+          <h4>Gray Track Pants</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$69.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-4.jpg" />
+          <h4>Blue Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$79.99</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/product-5.jpg" />
+          <h4>Light Gray Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$89.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-6.jpg" />
+          <h4>Black Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$99.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-7.jpg" />
+          <h4>Hrx Multi-Color Socks</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$39.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-8.jpg" />
+          <h4>Fossil Black Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$49.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-9.jpg" />
+          <h4>Roadster Black Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$29.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-10.jpg" />
+          <h4>Black & Red Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$19.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-11.jpg" />
+          <h4>Plain Casual Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$9.99</p>
+        </div>
+
+        <div class="col-4">
+          <img src="images/product-12.jpg" />
+          <h4>Black Trcak Pants</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$10.99</p>
+        </div>
+      </div>
+
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+
+    <!-- Featured Products -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android & IOS mobile</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <h1>ZeaStore</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              id, dolore sed culpa cumque ipsam tenetur.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copy">Copyright 2022 - ZeaStore</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <!-- Js For Toggle menu -->
+
+    <script>
+      let menu = document.getElementById("menuItems");
+
+      menu.style.maxHeight = "0px";
+
+      function menuToggle() {
+        if (menu.style.maxHeight === "0px") {
+          menu.style.maxHeight = "200px";
+        } else {
+          menu.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
